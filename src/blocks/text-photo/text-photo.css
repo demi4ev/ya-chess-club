@@ -1,0 +1,176 @@
+.text-photo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1222px;
+  padding: 80px 72px 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo {
+    padding: 48px 20px 0;
+    gap: 24px;
+  }
+}
+
+.text-photo__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__item {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.text-photo__item:last-child {
+  padding: 36px 0 0;
+}
+
+.text-photo__text {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 48.6px */
+  text-transform: uppercase;
+  max-width: 764px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__text {
+    font-size: 28px;
+  }
+}
+
+.text-photo__text span {
+  color: #F54932;
+}
+
+.text-photo__people-image {
+  width: 394px;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__people-image {
+    width: 100%;
+  }
+}
+
+.text-photo__collage-image {
+  margin: 0 0 0 -27px;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__collage-image {
+    margin: 0;
+    width: 100vw;
+  }
+}
+
+.text-photo__table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  columns: 2;
+  margin: 60px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__table {
+    columns: 1;
+  }
+}
+
+.text-photo__table-header {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  opacity: .7;
+  width: calc(50% - 16px - 2px);
+  border-bottom: 2px solid #D0D0D0;
+  border-right: 2px solid #D0D0D0;
+  padding: 16px 16px 16px 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__table-header {
+    width: 100%;
+    border: none;
+    padding: 16px 0 12px;
+  }
+}
+
+.text-photo__table-text {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  width: calc(50% - 16px);
+  border-bottom: 2px solid #D0D0D0;
+  padding: 16px 0 16px 16px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .text-photo__table-text {
+    width: 100%;
+    padding: 0 0 16px;
+  }
+}
+
+.text-photo__table-text_strike-through {
+  text-decoration: line-through;
+  text-decoration-color: #F54932;
+  margin-right: 12px;
+}
+
+.text-photo__table > p:first-child,
+.text-photo__table > p:nth-child(2) {
+  padding-top: 0;
+}
+
+.text-photo__table > p:last-child,
+.text-photo__table > p:nth-last-child(2) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.text-photo__small-text {
+  color: #3057A2;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin: 48px 0 0;
+}
+
+
+@media screen and (max-width: 767px) {
+  .text-photo__small-text {
+    font-size: 18px;
+    margin: 40px 0 0;
+  }
+  .text-photo__table > p:nth-last-child(2) {
+    padding-bottom: 12px;
+  }
+}

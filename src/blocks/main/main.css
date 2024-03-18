@@ -1,0 +1,265 @@
+.main {
+  background-color: #E9DED4;
+  background-image: url('../../assets/burn-filter.jpg');
+  background-size: cover;
+  background-blend-mode: color-burn;
+  padding: 0 72px 0;
+  position: relative;
+  background-repeat: repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 0 20px 0;
+    overflow: hidden;
+  }
+}
+
+.main__container {
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0 0 132px;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .main__container {
+    padding: 0 0 290px;
+  }
+}
+
+.main__title {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 66px */
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  max-width: 542px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__title {
+    font-size: 36px;
+    line-height: 110%; /* 39.6px */
+  }
+}
+
+.main__title span {
+  display: block;
+  margin: 0;
+}
+
+.main__title_align-center {
+  text-align: center;
+}
+
+.main__title_align-right {
+  text-align: right;
+}
+
+.main__lead {
+  color: #313131;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  margin: 0 0 40px;
+  max-width: 542px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__lead {
+    text-align: left;
+    margin: 0 0 32px;
+  }
+}
+
+.main__btn-container {
+  display: flex;
+  gap: 16px;
+  max-width: 542px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__btn-container {
+    gap: 14px;
+    flex-direction: column;
+  }
+}
+
+.main__btn {
+  display: flex;
+  padding: 0 48px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  border: none;
+  border-radius: 66px;
+  background: #1F1F1F;
+  color: #FFF;
+  max-width: 263px;
+  height: 72px;
+  text-align: center;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  text-decoration: none;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .main__btn {
+    padding: 18px 24px;
+    max-width: none;
+  }
+}
+
+.main__btn:hover {
+  background: #FBCE51;
+  color: #1F1F1F;
+}
+
+.main__btn_sec {
+  border: 2px solid #1F1F1F;
+  color: #1F1F1F;
+  background: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .main__btn_sec {
+    border: none;
+    background-color: rgba(255, 255, 255, .9);
+  }
+}
+
+.main__btn_sec:hover {
+  background: #1F1F1F;
+  color: #fff;
+}
+
+.main__images {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .main__images {
+    left: 10%;
+  }
+}
+
+.main__city-image {
+
+}
+
+@media screen and (max-width: 767px) {
+  .main__city-image {
+    width: 874px;
+  }
+}
+
+.main__king-image {
+  width: 104px;
+  position: absolute;
+  bottom: 174px;
+  right: 638px;
+  transform: rotate(-6deg);
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .main__king-image {
+    bottom: 118px;
+    right: 358px;
+    width: 47px;
+  }
+}
+
+.main__queen-image {
+  width: 113px;
+  position: absolute;
+  bottom: 276px;
+  right: 288px;
+  transform: rotate(8deg);
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .main__queen-image {
+    bottom: 172px;
+    right: 194px;
+    width: 47px;
+  }
+}
+
+.main__horse-image {
+  width: 154px;
+  position: absolute;
+  bottom: -40px;
+  right: 470px;
+  transform: rotate(-11deg);
+}
+
+@media screen and (max-width: 767px) {
+  .main__horse-image {
+    bottom: -17px;
+    right: 242px;
+    width: 76px;
+  }
+}
+
+.main__pawn-image {
+  width: 82px;
+  position: absolute;
+  bottom: 18px;
+  right: 162px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__pawn-image {
+    display: none;
+  }
+}
+
+.main__caption-image {
+  width: 100%;
+  transform: rotate(15px);
+}
+
+.main__yellow-circle {
+  position: absolute;
+  bottom: 88px;
+  right: 170px;
+  width: 634px;
+  height: 634px;
+  border-radius: 50%;
+  background-color: #FBCE51;
+  background-image: url('../../assets/burn-filter.jpg');
+  background-size: cover;
+  background-blend-mode: color-burn;
+  z-index: -1;
+  padding: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__yellow-circle {
+    bottom: 64px;
+    right: 138px;
+    width: 298px;
+    height: 298px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,178 @@
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0 72px 140px;
+}
+
+.members__controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.members__slider {
+  grid-column: span 3;
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0 0;
+}
+
+.members__slider-btn-prev,
+.members__slider-btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #313131;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.members__slider-btn-prev:disabled,
+.members__slider-btn-next:disabled {
+  background-color: #D6D6D6;
+}
+
+.members__slider-status {
+  color: #838383;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.members__slider-status-current {
+  color: #313131;
+}
+
+.members__slider-btn svg {
+  width: 50%;
+  height: 50%;
+  fill: #FFF;
+}
+
+.members__slider-btn-prev:hover,
+.members__slider-btn-next:hover {
+  background-color: #FBCE51;
+}
+
+.members__title {
+  grid-column: span 2;
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 64.8px */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.members__items {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.5s ease;
+}
+
+.members__item {
+  text-align: center;
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+
+.members__item-title {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  margin: 28px 0 6px;
+  width: 100%;
+}
+
+.members__item-text {
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin: 0 0 20px;
+}
+
+.members__item-btn {
+  display: inline-flex;
+  padding: 0 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  color: #3057A2;
+  border-radius: 17px;
+  border: 1px solid #3057A2;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.members__item-btn:hover {
+  background-color: #3057A2;
+  color: #fff;
+}
+
+.members__item-image {
+  background-color: #424241;
+  background-image: url('../../assets/stamp-paper-texture_dark.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .members {
+    padding: 0 20px 100px;
+    align-items: center;
+  }
+  .members__title {
+    font-size: 36px;
+    line-height: 110%; /* 39.6px */
+  }
+  .members__slider {
+    margin: 40px 0;
+  }
+  .members__header {
+    flex-direction: column;
+    margin: 0 0 40px;
+  }
+  .members__items {
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+  }
+  .members__item {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .members__controls {
+    grid-row-start: 4;
+    grid-column: span 3;
+    justify-self: center;
+  }
+}
