@@ -129,6 +129,11 @@
   color: #1F1F1F;
 }
 
+.main__btn:active {
+  transform: scale(0.94);
+  transition: transform 0.2s ease;
+}
+
 .main__btn_sec {
   border: 2px solid #1F1F1F;
   color: #1F1F1F;
